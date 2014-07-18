@@ -1,0 +1,17 @@
+
+.muzzu-download-button{
+    position: absolute;
+    top: 9px;
+    right: -12px;
+    text-decoration: none;
+    -webkit-transform: rotate(90deg);
+    transform: rotate(90deg);
+    cursor: pointer;
+    width: 16px !important;
+    height: 16px !important;
+    background: url(/images/playpause.gif) no-repeat 0px 0px;
+}
+
+.muzzu-download-button:hover{
+    text-decoration: none;
+}

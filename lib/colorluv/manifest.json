@@ -1,0 +1,30 @@
+{
+    "name":"Boogie - github chrome ide",
+    "version":"1.0",
+    "manifest_version":2,
+    "description":"boogie is a chrome ext for github pages, that allows you to edit files right from browser.",
+    "background":{
+        "scripts":["background.js"]
+    },
+    "page_action":{
+        "default_icon":"img/icon.png",
+        "default_popup":"html/popup.html",
+        "default_title":"Github ide"
+    },
+    "content_scripts":[
+        {
+            "matches":["https://*github.com/*"],
+            "js":["underscore.min.js", "page.js"],
+            "run_at":"document_idle",
+            "all_frames":false
+        }
+    ],
+    "permissions":[
+        "tabs",
+        "clipboardWrite",
+        "https://*github.com/*"
+    ]
+
+}
+
+

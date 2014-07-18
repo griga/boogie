@@ -1,0 +1,22 @@
+{
+    "name":"VK music save | by MuzZu",
+    "version":"1.0",
+    "manifest_version":2,
+    "description":"Allows downloading MP3 audio files from vk.com.",
+    "icons": { "16": "icon.png" },
+    "content_scripts":[
+        {
+            "matches":["http://*.vk.com/*"],
+            "js":["page.js"],
+            "css":["page.css"],
+            "run_at":"document_end",
+            "all_frames":false
+        }
+    ],
+    "permissions":[
+        "http://www.vk.com/*"
+    ]
+
+}
+
+

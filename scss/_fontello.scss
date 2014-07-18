@@ -1,0 +1,35 @@
+@font-face {
+  font-family: 'fontello';
+
+  src: url('chrome-extension://aejeghloocgeomobpdmpjblpkbegckik/css/font/fontello.ttf') format('truetype');
+  //src: url('/css/font/fontello.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+ [class^="bgi-icon-"]:before, [class*=" bgi-icon-"]:before {
+  font-family: "fontello";
+  font-style: normal;
+  font-weight: normal;
+  speak: none;
+ 
+  display: inline-block;
+  text-decoration: inherit;
+  width: 20px;
+  margin-right: 0;
+  text-align: center;
+
+  /* For safety - reset parent styles, that can break glyph codes*/
+  font-variant: normal;
+  text-transform: none;
+     
+  /* fix buttons height, for twitter bootstrap */
+  line-height: 20px;
+ 
+  /* Uncomment for 3D effect */
+  /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */
+}
+ 
+.bgi-icon-keyboard:before { content: '\e802'; }
+.bgi-icon-science:before { content: '\e801'; }
+.bgi-icon-network:before { content: '\e800'; }
